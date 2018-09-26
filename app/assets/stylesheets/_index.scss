@@ -6,6 +6,7 @@
                 width: 100vw;
                 height: 240px;
                 object-fit: cover;
+                filter: brightness(80%);
             }
         }
         .top-link {
@@ -16,7 +17,7 @@
             width: 100%;
             font-size: 16px;
             border-radius: 6px;
-            padding: 32px ;
+            padding: 32px;
                 &__box {
                     h2 {
                         font-size: 30px;
