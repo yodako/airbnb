@@ -8,9 +8,9 @@
                 object-fit: cover;
             }
         }
-        // .top-link {
-        //     display: none;
-        // }
+        .top-link {
+            display: none;
+        }
         .top-form {
             background-color: #FFFFFF;
             width: 100%;
@@ -152,6 +152,7 @@
                     }
         }
         .top-link {
+            display: inline;
             position: absolute;
             bottom: 300px;
             right: 40px;
