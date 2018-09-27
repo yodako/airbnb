@@ -88,7 +88,7 @@
                     width: 50%;
                     float: left;
                 }
-                }
+            }
                 &__persons {
                     clear: both;
                     margin:5px 0 20px;
@@ -139,7 +139,7 @@
         .top-form {
             width: 450px;
             position: absolute;
-            top: 130px;
+            top: 100px;
             left: 20%;
             font-size: 16px;
             padding: 32px ;
@@ -153,6 +153,13 @@
                     span {
                         font-weight:bold;
                         font-size: 12px;
+                    }
+                }
+                &__button {
+                    clear: both;
+                    button {
+                        width: 100px;
+                        float: right;
                     }
                 }
         }
