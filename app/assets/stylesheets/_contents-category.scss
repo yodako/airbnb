@@ -9,7 +9,6 @@
 .contents-category {
       width: 100%;
       padding: 34px 80px;
-      @include clearfix();
       &__title {
         h2 {
           font-weight: 700;
