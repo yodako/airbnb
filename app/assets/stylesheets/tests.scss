@@ -1,0 +1,302 @@
+.show-content{
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  &__header{
+    width: 100%;
+    height: 30px;
+    margin: 0;
+  }
+  &__main{
+    width: 100%;
+    &-top{
+      width: 100%;
+      height: 100%;
+      .top-image{
+        width: 100%;
+        height: 500px;
+        position: relative;
+      }
+      .share{
+        position: absolute;
+        top: 50px;
+        right: 100px;
+      }
+      .keep{
+        position: absolute;
+        top: 50px;
+        right: 30px;
+      }
+      .display{
+        position: absolute;
+        bottom: 100px;
+        left: 30px;
+      }
+    }
+    &-body{
+      max-width: 64%;
+      margin-left: 18%;
+      margin-right: 18%;
+      &__left-content{
+        width: 32%;
+        height: 100%;
+        float: left;
+        &-top{
+          width: 100%;
+          margin-top: 5px;
+          &__title{
+            font-size: 7px;
+            font-weight: bold;
+          }
+          &__main{
+            font-size: 18px;
+            font-weight: bold;
+          }
+          .icon-image{
+            width: 50px;
+            height: 50px;
+            border-radius: 150px;
+            float: right;
+          }
+          &__area{
+            font-size: 8px;
+          }
+          &__condition{
+            font-size: 12px;
+            padding-top: 5px;
+          }
+        }
+        &-point{
+          border: 1px solid #EBEBEB;
+          border-radius: 4px;
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+          padding: 20px;
+          margin-top: 10px;
+          &__title{
+            font-size: 7px;
+          }
+          &__body{
+            font-size: 10px;
+            padding-top: 8px;
+          }
+          &__action{
+            font-size: 9px;
+            padding-top: 8px;
+          }
+        }
+        &-deteil{
+          font-size: 11px;
+          padding-top: 5px;
+          padding-bottom: 10px;
+        }
+        &-amenities{
+          border-top: 1px solid #EBEBEB;
+          .title{
+            font-size: 10px;
+          }
+          &-items{
+            font-size: 10px;
+          }
+        }
+        &-bed{
+          font-size: 10px;
+          padding-top: 10px;
+          font-weight: bold;
+          position: relative;
+          height: auto;
+          border-top: 1px solid #EBEBEB;
+          margin-top: 15px;
+          padding-bottom: 10px;
+          &-left{
+            border: 1px solid #EBEBEB;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+            height: 80px;
+            width: 30%;
+            float: left;
+            position: absolute;
+            top: 35px;
+            white-space: pre;
+            font-weight: normal;
+          }
+          &-right{
+            border: 1px solid #EBEBEB;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+            height: 80px;
+            width: 30%;
+            position: absolute;
+            left: 150px;
+            top: 35px;
+            white-space: pre;
+            font-weight: normal;
+          }
+        }
+        &-reservation{
+          margin-top: 100px;
+          font-size: 10px;
+          border-top: 1px solid #EBEBEB;
+          &-title{
+            font-weight: bold;
+            padding-top: 10px;
+          }
+          &-update{
+            padding-top: 10px;
+          }
+          &-calendar{
+            .calendar-image{
+              height: 50px;
+              width: 100px;
+            }
+          }
+        }
+        &-review{
+          margin-top: 15px;
+          padding-top: 15px;
+          border-top: 1px solid #EBEBEB;
+          &-title{
+            font-weight: bold;
+          }
+          &-body{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 10px;
+          }
+          .review-button{
+            border: 0.5px solid black;
+            border-radius: 4px;
+          }
+        }
+        &-host{
+          margin-top: 20px;
+          &-title{
+            font-weight: bold;
+          }
+          &-sub{
+            font-size: 10px;
+            padding-top: 10px;
+          }
+          &-num{
+            font-size: 10px;
+            padding-top: 10px;
+          }
+          &-reply-rate{
+            font-size: 10px;
+            padding-top: 10px;
+          }
+          &-reply-time{
+            font-size: 10px;
+            padding-top: 5px;
+          }
+          .host-communication{
+            border: 1px solid green;
+            color: green;
+            margin-top: 10px;
+            border-radius: 4px;
+          }
+        }
+        &-caution{
+          font-size: 10px;
+          margin-top: 15px;
+          border-top: 1px solid #EBEBEB;
+          padding-top: 15px;
+          padding-bottom: 10px;
+        }
+        &-area{
+          font-weight: bold;
+          border-top: 1px solid #EBEBEB;
+          margin-top: 10px;
+          padding-top: 10px;
+          &-title{
+            font-size: 10px;
+            font-weight: normal;
+          }
+          &-sub{
+            font-size: 10px;
+            font-weight: normal;
+            padding-top: 12px;
+          }
+          &-body{
+            font-size: 10px;
+            font-weight: normal;
+            padding-top: 12px;
+            &-action{
+              color: green;
+              padding-top: 15px;
+              padding-bottom: 15px;
+            }
+          }
+          &-map{
+            font-size: 10px;
+            font-weight: normal;
+          }
+        }
+        &-rule{
+          font-weight: bold;
+          border-top: 1px solid #EBEBEB;
+          margin-top: 10px;
+          padding-top: 10px;
+          &-title{
+            font-weight: 800;
+            font-size: 10px;
+            padding-top: 15px;
+          }
+          &-body{
+            font-weight: normal;
+            font-size: 10px;
+            white-space: pre;
+          }
+          &-action{
+            font-weight: normal;
+            color: green;
+            font-size: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+        }
+        &-cancel{
+          font-size: 10px;
+          border-top: 1px solid #EBEBEB;
+          border-bottom: 1px solid #EBEBEB;
+          padding-top: 15px;
+          &-title{
+            font-weight: 400;
+          }
+          &-body{
+            padding-top: 10px;
+            white-space: pre;
+          }
+          &-action{
+            color: green;
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+        }
+      }
+      &__right-content{
+        width: 32%;
+        height: 100%;
+        float: right;
+        margin-right: 
+        &-tool{
+          border: 1px solid #EBEBEB;
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+          margin-left: 15px;
+          &-price{
+            border-bottom: 1px solid #EBEBEB;
+          }
+          &-date{
+          }
+          &-number{
+          }
+          .check{
+            background-color: #FF5A5F;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
