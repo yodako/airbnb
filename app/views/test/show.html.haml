@@ -47,7 +47,7 @@
           .show-content__main-body__left-content-reservation-update
             2日前に更新
           .show-content__main-body__left-content-reservation-calendar
-            %img.calendar-image{src: "./images/calendar.png", alt: "カレンダー"}
+            %img.calendar-image{src: "/assets/calendar.png", alt: "カレンダー"}
         .show-content__main-body__left-content-review
           .show-content__main-body__left-content-review-title
             レビューは（まだ）０件です
@@ -81,8 +81,8 @@
             .show-content__main-body__left-content-area-body-action
               このエリア情報の続きを読む
           .show-content__main-body__left-content-area-map
-            %img.map-image{src: "/images/map.png"}
-            詳しい所在地はご予約時にお知らせします。
+            %img.map-image{src: "/assets/map.png"}
+            %p 詳しい所在地はご予約時にお知らせします。
         .show-content__main-body__left-content-rule
           ポリシー
           .show-content__main-body__left-content-rule-title
@@ -108,11 +108,13 @@
 
     .show-content__main-body__right-content
       .show-content__main-body__right-content-tool
-        .show-content__main-body__right-content-price <b>¥ 11,800</b>/1泊
-        .show-content__main-body__right-content-date 日付
-        %input{name: "日付", placeholder: "チェックイン　➡︎ チェックアウト", type: "text", value: ""}
-        .show-content__main-body__right-content-number 人数
-        %input{name: "人数", placeholder: "人数を選択", type: "select", value: ""}
+        .show-content__main-body__right-content-tool-price <b>¥ 11,800</b>/1泊
+        .show-content__main-body__right-content-tool-date 日付
+        %input{name: "日付", placeholder: "2018/09/26 ➡︎ 2018/09/29", type: "text", value: ""}
+        .show-content__main-body__right-content-tool-number 人数
+        %input{name: "人数", placeholder: "ゲスト１人", type: "select", value: ""}
+        .show-content__main-body__right-content-tool-caution
+          その日程では予約できません
         %button.check 空室状況をチェック
 
     .show-content__main-body__bottom-content
