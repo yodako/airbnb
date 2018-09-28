@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root 'hosts#index'
-  resources :hosts
+  get 'hosts' => 'hosts#index1'
+  get 'hosts/new' => 'hosts#new'
+  post 'hosts' => 'hosts/create'
 end

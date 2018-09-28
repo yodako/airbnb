@@ -1,5 +1,5 @@
 class HostsController < ApplicationController
-  def index
+  def index1
   end
   
   def new
