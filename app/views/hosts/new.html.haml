@@ -1,0 +1,147 @@
+.pageheader__host_new
+  .pageheader__host_new--top
+    .pageheader__host_new--top--icon
+      %a{href:"#"}
+        =image_tag 'registration_new.png',class:"registration_icon"
+    .pageheader__host_new--top--user_icon
+      %img{src:"assets/Airbnb_icon-icons.com_66791.png"}
+  .pageheader__host_new__lists
+    .pageheader__host_new__lists--list
+      .pageheader__host_new__lists--list--font 物件タイプ
+    .pageheader__host_new__lists--list
+      .pageheader__host_new__lists--list--font ベッドルーム数
+    .pageheader__host_new__lists--list
+      .pageheader__host_new__lists--list--font バスタブ
+    .pageheader__host_new__lists--list
+      .pageheader__host_new__lists--list--font 所在地
+    .pageheader__host_new__lists--list
+      .pageheader__host_new__lists--list--font アメニティ・設備
+    .pageheader__host_new__lists--list
+      .pageheader__host_new__lists--list--font 共有スペース
+
+.pagebody__host__basic
+  .pagebody__host__basic__leftcontent
+    .pagebody__host__basic__leftcontent--form
+      .pagebody__host__basic__leftcontent--form--top 
+
+        = form_for @host do |f|
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            掲載するのはどんなお部屋ですか？
+          .pagebody__host__basic__leftcontent--form--top--propaty_questions 
+            まずカテゴリを絞りましょう
+          =f.select :kind ,[0,1,2],{},class:"type_select"
+          .pagebody__host__basic__leftcontent--form--top--propaty_questions 
+            次に建物タイプを選んでください
+          =f.select :kind,[0,1,2],{},class:"type_select"
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            部屋タイプは?
+          =f.select :kind, [0,1,2],{},class:"type_select"
+          .pagebody__host__basic__leftcontent--form--top--propaty_question 
+            最大何人まで宿泊可能ですか?
+          =f.number_field :kind,min:0
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            バスルーム数
+          =f.number_field :kind,step:"0.5"
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            所在地は?
+          =f.select :kind, [0,1,2],{}
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            ご用意するアメニティ・設備は?
+          .propaty_question--checkboxs
+            =f.check_box :kind 
+            必需品
+            %br
+            =f.check_box :kind 
+            TV
+            %br
+            =f.check_box :kind 
+            Wi-Fi
+            %br
+            =f.check_box :kind 
+            シャンプー
+            %br
+            =f.check_box :kind 
+            クローゼット
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            ゲストが利用可能なスペースは?
+          =f.check_box :kind 
+          専用のリビングルーム
+          %br
+          =f.check_box :kind 
+          プール
+          %br
+          =f.check_box :kind 
+          キッチン
+          %br
+          =f.check_box :kind 
+          洗濯機
+          %br
+          =f.check_box :kind 
+          洗濯乾燥機
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            お部屋の様子をゲストに紹介しよう
+          =f.file_field :kind
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            説明文を編集する
+          %p 概要
+          =f.text_field :kind ,placeholder:"インテリア、照明、近所にあるものなどを説明してください。"
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            物件に名前をつける
+          =f.text_field :kind
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+            滞在中のハウスルールを設定しましょう
+          =f.label :kind do
+            %h1 子供(2-12歳)OK
+            =f.radio_button :ki , 0
+            NO
+            =f.radio_button :ki , 1
+            YES
+          =f.label :no do
+            %h1 ペットOK
+            =f.radio_button :no , 2
+            NO
+            =f.radio_button :no , 3
+            YES
+          %br
+          お家についてゲストが事前に知っておくこと
+          %br
+          =f.check_box :kind
+          階段を登らないとたどり着けません
+          =f.check_box :kind 
+          騒音の可能性あり
+          %br
+          =f.check_box :kind 
+          ペットがいます
+          %br
+          =f.check_box :kind 
+          共用スペースあり
+          %br
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+          ゲストの宿泊可能日数は?
+          .p 2泊から
+          =f.number_field :kind,min:0
+          から
+          .p 3泊
+          =f.number_field :kind,min:0,class:"num"
+          %br
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+          カレンダーの更新を
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+          %p お部屋の料金
+          基本料金
+          =f.number_field :note
+          推奨:¥6,786
+          %p 通貨
+          =f.number_field :kind
+          .pagebody__host__basic__leftcontent--form--top--propaty_question
+          以上の設定をすると
+
+          =f.submit
+
+      .pagebody__host__basic__leftcontent--form--bottom
+        .pagebody__host__basic__leftcontent--form--bottom--return 
+          .font 戻る
+        .pagebody__host__basic__leftcontent--form--bottom--next 
+          .font 次へ
+
+ 
